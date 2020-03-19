@@ -27,7 +27,7 @@
         <activity android:name=".ClassRoutine" android:label="Class Routine"/>
         <activity android:name=".AboutUs" android:label="About Us"/>
         <activity android:name=".BrowserActivity" />
-        <activity android:name=".LoginActivity" />
+        <activity android:name=".LoginActivity" android:label="Login"/>
         <activity
             android:name=".MainActivity"
             android:label="@string/app_title"

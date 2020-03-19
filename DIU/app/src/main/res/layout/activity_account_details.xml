@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="@dimen/activity_horizontal_margin"
+    tools:context=".AccountDetails">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/activity_horizontal_margin">
+        <TextView
+            android:id="@+id/tv_student_name"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:text="Rejaul Karim"
+            android:layout_marginBottom="10dp"
+            android:textColor="#1e1e1e"/>
+
+        <TextView
+            android:id="@+id/tv_batch"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_student_name"
+            android:text="Batch: --"
+            android:layout_marginBottom="10dp"
+            android:textColor="#1e1e1e"/>
+        <TextView
+            android:id="@+id/tv_shift"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/tv_student_name"
+            android:text="Shift: -----"
+            android:textColor="#1e1e1e"/>
+        <TextView
+            android:id="@+id/tv_session"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_batch"
+            android:text="Session: ----"
+            android:textColor="#1e1e1e"/>
+    </RelativeLayout>
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Account Summery"
+    android:textColor="#1e1e1e"
+    android:textSize="18sp"
+    android:textStyle="bold"
+    android:gravity="center"
+    android:layout_marginBottom="@dimen/activity_horizontal_margin"/>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TableRow android:background="#DAE8FC" android:padding="5dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"
+
+                    android:textColor="#1e1e1e"
+                    android:textStyle="bold"
+                    android:text="Actual Total Fee" />
+
+                <TextView
+                    android:id="@+id/tv_actual_fee"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#1e1e1e"
+                    android:layout_weight="2"
+                    android:gravity="right"
+                    android:text="-------" />
+            </TableRow>
+            <TableRow android:background="#ffffff" android:padding="5dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"
+                    android:textColor="#1e1e1e"
+                    android:textStyle="bold"
+                    android:text="Special Scholarship" />
+
+                <TextView
+                    android:id="@+id/tv_scholarship"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#1e1e1e"
+                    android:layout_weight="2"
+                    android:gravity="right"
+                    android:text="-------" />
+            </TableRow>
+            <TableRow android:background="#DAE8FC" android:padding="5dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"
+                    android:textColor="#1e1e1e"
+                    android:textStyle="bold"
+                    android:text="Per Semester Fee Without Scholarship" />
+
+                <TextView
+                    android:id="@+id/tv_semFeeWithoutSc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#1e1e1e"
+                    android:layout_weight="2"
+                    android:gravity="right"
+                    android:text="-------" />
+            </TableRow>
+            <TableRow android:background="#ffffff" android:padding="5dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"
+                    android:textColor="#1e1e1e"
+                    android:textStyle="bold"
+                    android:text="Per Semester Fee" />
+
+                <TextView
+                    android:id="@+id/tv_perSemFee"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#1e1e1e"
+                    android:layout_weight="2"
+                    android:gravity="right"
+                    android:text="-------" />
+            </TableRow>
+            <TableRow android:background="#DAE8FC" android:padding="5dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"
+                    android:textColor="#1e1e1e"
+                    android:textStyle="bold"
+                    android:text="Total Paid" />
+
+                <TextView
+                    android:id="@+id/tv_total_paid"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#1e1e1e"
+                    android:layout_weight="2"
+                    android:gravity="right"
+                    android:text="-------" />
+            </TableRow>
+            <TableRow android:background="#ffffff" android:padding="5dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"
+                    android:textColor="#1e1e1e"
+                    android:textStyle="bold"
+                    android:text="Total Current Due" />
+
+                <TextView
+                    android:id="@+id/tv_currentDue"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#1e1e1e"
+                    android:layout_weight="2"
+                    android:gravity="right"
+                    android:text="-------" />
+            </TableRow>
+            <TableRow android:background="#DAE8FC" android:padding="5dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"
+                    android:textColor="#1e1e1e"
+                    android:textStyle="bold"
+                    android:text="Total Due" />
+
+                <TextView
+                    android:id="@+id/tv_total_due"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#1e1e1e"
+                    android:layout_weight="2"
+                    android:gravity="right"
+                    android:text="-------" />
+            </TableRow>
+        </TableLayout>
+
+<Button
+    android:id="@+id/btn_view_transection"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="bottom"
+    android:background="@color/colorPrimary"
+    android:textColor="#ffffff"
+    android:textAllCaps="false"
+    android:layout_marginTop="@dimen/activity_horizontal_margin"
+    android:text="View Transection"/>
+    <TextView
+        android:id="@+id/test"
+        android:textColor="#1e1e1e"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>

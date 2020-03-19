@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Admission">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Admission Eligibility"
+                android:gravity="center"
+                android:layout_marginTop="@dimen/activity_horizontal_margin"
+                android:textColor="#1e1e1e"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#1e1e1e"
+                android:padding="@dimen/activity_horizontal_margin"
+                android:text="@string/text_admission"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Required Documents"
+                android:gravity="center"
+                android:layout_marginTop="@dimen/activity_horizontal_margin"
+                android:textColor="#1e1e1e"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#1e1e1e"
+                android:padding="@dimen/activity_horizontal_margin"
+                android:text="@string/text_admission_req"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

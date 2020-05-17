@@ -1,17 +1,78 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".Transport">
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:textColor="#1e1e1e"
-        android:gravity="center"
-        android:padding="@dimen/activity_horizontal_margin"
-        android:text="DIU offers free transport service from different corner of the city to Permanent Campus."/>
+    <RelativeLayout
+        android:id="@+id/rl"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/banner_size"
+        android:background="@drawable/buses">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#AB0E0F0E"
+            android:gravity="bottom"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingBottom="@dimen/activity_horizontal_margin"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/un"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#fff"
+                android:textSize="@dimen/h2"
+                android:textStyle="bold"
+                android:text="Dhaka international University"
+                android:textAllCaps="true"
+                android:layout_alignParentBottom="true"/>
+            <TextView
+                android:id="@+id/tv_dept"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/heading"
+                android:textColor="#fff"
+                android:textStyle="bold"
+                android:gravity="bottom"
+                android:shadowColor="#fff"
+                android:layout_alignParentBottom="true"
+                android:fontFamily="sans-serif"
+                android:textAllCaps="true"
+                android:text="Transport Services"/>
 
-</RelativeLayout>
+        </LinearLayout>
+
+
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/activity_horizontal_margin"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/tv_ts"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#1e1e1e"
+            android:text="DIU offers free transport service from different corner of the city to Permanent Campus."/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/heading"
+            android:paddingTop="@dimen/activity_horizontal_margin"
+            android:textStyle="bold"
+            android:text="Contact Number"/>
+        <TextView
+            android:id="@+id/tv_about"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorBlack"
+            android:text=""/>
+
+        </LinearLayout>
+</LinearLayout>

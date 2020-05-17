@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Library">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/banner_size"
+        android:background="@drawable/library">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#AB0E0F0E"
+            android:gravity="bottom"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingBottom="@dimen/activity_horizontal_margin"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/un"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#fff"
+                android:textSize="@dimen/h2"
+                android:textStyle="bold"
+                android:text="Dhaka international University"
+                android:textAllCaps="true"
+                android:layout_alignParentBottom="true"/>
+            <TextView
+                android:id="@+id/lb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/heading"
+                android:textColor="#fff"
+                android:textStyle="bold"
+                android:gravity="bottom"
+                android:shadowColor="#fff"
+                android:layout_alignParentBottom="true"
+                android:fontFamily="sans-serif"
+
+                android:text="LIBRARY"/>
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorBlack"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_horizontal_margin"
+        android:text="More then 20,000 books of different department are available in Dhaka International University\'s Library."/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/activity_horizontal_margin"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/heading"
+            android:textStyle="bold"
+            android:text="Registration"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorBlack"
+            android:text="To get membership card you have to pay registration fee 2000/- BDT and fill an application"/>
+    </LinearLayout>
+
+
+    </LinearLayout>

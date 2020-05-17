@@ -1,30 +1,29 @@
 package com.tirtho.diu;
 
+import android.content.ComponentName;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.graphics.Color;
+import android.net.ConnectivityManager;
+import android.net.NetworkInfo;
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
-import android.view.View;
-import android.support.v4.view.GravityCompat;
-import android.support.v7.app.ActionBarDrawerToggle;
-import android.view.MenuItem;
 import android.support.design.widget.NavigationView;
+import android.support.design.widget.Snackbar;
+import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
-
+import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
+import android.view.MenuItem;
+import android.view.View;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import java.text.SimpleDateFormat;
-import java.time.DayOfWeek;
 import java.util.Calendar;
-import java.util.Date;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
@@ -34,6 +33,7 @@ public class MainActivity extends AppCompatActivity
     private Calendar calendar;
     private SimpleDateFormat dateFormat;
     private String date;
+    public static String token;
 
     SharedPreferences preferences;
 
@@ -52,6 +52,7 @@ public class MainActivity extends AppCompatActivity
         preferences = getSharedPreferences(LoginActivity.mySharedPreference, Context.MODE_PRIVATE);
 
         boolean isLogin = preferences.getBoolean(LoginActivity.isLogin, false);
+        token = preferences.getString(LoginActivity.TOKEN, "miss");
 
         if (!isLogin) {
             Intent intent = new Intent(this, LoginActivity.class);
@@ -103,6 +104,18 @@ public class MainActivity extends AppCompatActivity
 //            }
 //        });
 
+        View parentLayout = findViewById(android.R.id.content);
+        if (!isOnline()) {
+
+            Snackbar.make(parentLayout, "You are offline", Snackbar.LENGTH_LONG)
+                    .setAction("Turn On", new View.OnClickListener() {
+                        @Override
+                        public void onClick(View v) {
+                            startActivityForResult(new Intent(android.provider.Settings.ACTION_SETTINGS), 0);
+                        }
+                    }).show();
+        }
+
 
         DrawerLayout drawer = findViewById(R.id.drawer_layout);
         NavigationView navigationView = findViewById(R.id.nav_view);
@@ -128,17 +141,17 @@ public class MainActivity extends AppCompatActivity
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.main, menu);
+
+
+//        menu.getItem(R.id.action_profile).setIcon()
         return true;
     }
 
+
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
         int id = item.getItemId();
 
-        //noinspection SimplifiableIfStatement
         if (id == R.id.action_settings) {
             return true;
         }
@@ -151,6 +164,9 @@ public class MainActivity extends AppCompatActivity
             this.finish();
 
             return true;
+        }
+        if (id == R.id.action_profile) {
+            startActivity(new Intent(MainActivity.this, Profile.class));
         }
 
         return super.onOptionsItemSelected(item);
@@ -168,18 +184,21 @@ public class MainActivity extends AppCompatActivity
         } else if (id == R.id.nav_class_routine) {
             startActivity(new Intent(MainActivity.this, ClassRoutine.class));
         } else if (id == R.id.nav_class_notice) {
+            startActivity(new Intent(MainActivity.this, Notice.class));
 
         } else if (id == R.id.nav_account_details) {
             startActivity(new Intent(MainActivity.this, AccountDetails.class));
         } else if (id == R.id.nav_academic_result) {
-
+            startActivity(new Intent(MainActivity.this, AcademicResult.class));
         } else if (id == R.id.nav_class_academic_calender) {
             startActivity(new Intent(MainActivity.this, AcademicCalendar.class));
         } else if (id == R.id.nav_administration) {
             startActivity(new Intent(MainActivity.this, Administration.class));
-        } else if (id == R.id.nav_faculity_members) {
-            startActivity(new Intent(MainActivity.this, FaculityMenber.class));
-        } else if (id == R.id.nav_student_comunity) {
+        }
+//        else if (id == R.id.nav_faculity_members) {
+//            startActivity(new Intent(MainActivity.this, FaculityMenber.class));
+//        }
+        else if (id == R.id.nav_student_comunity) {
             startActivity(new Intent(MainActivity.this, StudentsCommunity.class));
         } else if (id == R.id.nav_transport) {
             startActivity(new Intent(MainActivity.this, Transport.class));
@@ -191,17 +210,30 @@ public class MainActivity extends AppCompatActivity
             Toast.makeText(this, "Service is not available.", Toast.LENGTH_SHORT).show();
         } else if (id == R.id.nav_exam_guidline) {
             Toast.makeText(this, "Service is not available.", Toast.LENGTH_SHORT).show();
-        } else if (id == R.id.nav_credit_transfer) {
-            Toast.makeText(this, "Service is not available.", Toast.LENGTH_SHORT).show();
         } else if (id == R.id.nav_admission) {
             startActivity(new Intent(MainActivity.this, Admission.class));
         } else if (id == R.id.nav_about) {
             startActivity(new Intent(MainActivity.this, AboutUs.class));
         } else if (id == R.id.nav_rules) {
             startActivity(new Intent(MainActivity.this, RulesAndRegulation.class));
+        } else if (id == R.id.nav_contact) {
+            startActivity(new Intent(MainActivity.this, Contact.class));
+        } else if (id == R.id.nav_dept) {
+            startActivity(new Intent(MainActivity.this, Department.class));
+        }else if (id == R.id.nav_library) {
+            startActivity(new Intent(MainActivity.this, Library.class));
         }
         DrawerLayout drawer = findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
         return true;
+    }
+
+    public boolean isOnline() {
+        ConnectivityManager cm = (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
+        NetworkInfo netInfo = cm.getActiveNetworkInfo();
+        if (netInfo != null && netInfo.isConnectedOrConnecting()) {
+            return true;
+        }
+        return false;
     }
 }

@@ -1,7 +1,9 @@
 package com.tirtho.diu;
 
 import android.app.ProgressDialog;
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -15,6 +17,7 @@ import com.tirtho.com.tirtho.account.Summary;
 import com.tirtho.com.tirtho.account.TuitionFee;
 import com.tirtho.com.tirtho.account.TutionFeeService;
 import com.tirtho.com.tirtho.diu.custome.list.TransectionAdepter;
+import com.tirtho.diu.com.tirtho.others.ServiceHelper;
 
 import java.security.cert.CertificateException;
 import java.util.List;
@@ -37,9 +40,10 @@ public class AccountDetails extends AppCompatActivity {
     Button viewTransection;
     AccountServices services;
     ProgressDialog progressDoalog;
+    SharedPreferences preferences;
 
     TextView actualFee, scholarship, perSemesterFeeWithoutSc, perSemFee, totalPaid, currentDue, totalDue, t,
-            batch, session, shift;
+            batch, session, shift, stName;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -57,6 +61,7 @@ public class AccountDetails extends AppCompatActivity {
         batch = findViewById(R.id.tv_batch);
         session = findViewById(R.id.tv_session);
         shift = findViewById(R.id.tv_shift);
+        stName = findViewById(R.id.tv_student_name);
 
         t = findViewById(R.id.test);
 
@@ -67,6 +72,10 @@ public class AccountDetails extends AppCompatActivity {
         progressDoalog.setProgressStyle(ProgressDialog.STYLE_SPINNER);
         progressDoalog.show();
 
+        preferences = getSharedPreferences(LoginActivity.mySharedPreference, Context.MODE_PRIVATE);
+        String token = preferences.getString(LoginActivity.TOKEN,"f");
+
+
         Retrofit retrofit = new Retrofit.Builder()
                 .baseUrl(TransectionDetails.BASE_URL)
                 .client(getUnsafeOkHttpClient().build())
@@ -75,11 +84,15 @@ public class AccountDetails extends AppCompatActivity {
 
         services = retrofit.create(AccountServices.class);
 
-        Call<AccountSummry> listCall = services.getSummery();
+        Call<AccountSummry> listCall = services
+                .getSummery(
+                        ServiceHelper.getId(AccountDetails.this)
+                        ,ServiceHelper.getToken(AccountDetails.this)
+                );
+
         listCall.enqueue(new Callback<AccountSummry>() {
             @Override
             public void onResponse(Call<AccountSummry> call, Response<AccountSummry> response) {
-
 
                 if (response.isSuccessful()) {
 
@@ -94,6 +107,7 @@ public class AccountDetails extends AppCompatActivity {
 
                     batch.setText("Batch: " + summary.getSummary().getBatch().getBatchName());
                     session.setText("Session: " + summary.getSummary().getBatch().getSess());
+                    stName.setText(ServiceHelper.getStudentName(AccountDetails.this));
                     if (summary.getSummary().getBatch().getShiftId().equals("2")) {
                         shift.setText("Shift: Evening" );
                     }else {
@@ -101,7 +115,7 @@ public class AccountDetails extends AppCompatActivity {
                     }
 
                 }
-                t.setText(response.code()+"\n"+response.toString());
+
                 progressDoalog.dismiss();
             }
 

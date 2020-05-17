@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Semester: 2"
+        android:padding="10dp"
+        android:textColor="#fff"
+        android:textStyle="bold"
+        android:background="#666"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="Course Code"
+            android:textColor="#1e1e1e"
+            android:gravity="center"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:background="#AE9DBAD1"
+            android:gravity="center"
+            android:text="Course Name"
+            android:textColor="#1e1e1e" />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight=".8"
+            android:gravity="center"
+            android:text="Credit Hour"
+            android:textColor="#1e1e1e"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Incourse"
+            android:background="#AE9DBAD1"
+            android:textColor="#1e1e1e"
+            android:layout_height="match_parent" />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight=".7"
+            android:gravity="center"
+            android:text="Final"
+            android:textColor="#1e1e1e"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Grade Earned"
+            android:background="#AE9DBAD1"
+            android:textColor="#1e1e1e"
+            android:layout_height="match_parent" />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Grade Point"
+            android:textColor="#1e1e1e"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="CSE-109"
+            android:textColor="#1e1e1e"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:background="#AE9DBAD1"
+            android:gravity="center"
+            android:text="System Analysis and Design"
+            android:textColor="#1e1e1e" />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight=".8"
+            android:gravity="center"
+            android:text="3"
+            android:layout_gravity="center"
+            android:textColor="#1e1e1e"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="40"
+            android:background="#AE9DBAD1"
+            android:textColor="#1e1e1e"
+            android:layout_gravity="center"
+            android:layout_height="match_parent" />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight=".7"
+            android:gravity="center"
+            android:text="40"
+            android:layout_gravity="center"
+            android:textColor="#1e1e1e"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="A+"
+            android:background="#AE9DBAD1"
+            android:textColor="#1e1e1e"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="4.00"
+            android:layout_gravity="center"
+            android:textColor="#1e1e1e"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="CSE-109"
+            android:textColor="#1e1e1e"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:background="#AE9DBAD1"
+            android:gravity="center"
+            android:text="Digital System"
+            android:textColor="#1e1e1e" />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight=".8"
+            android:gravity="center"
+            android:text="3"
+            android:layout_gravity="center"
+            android:textColor="#1e1e1e"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="40"
+            android:background="#AE9DBAD1"
+            android:textColor="#1e1e1e"
+            android:layout_gravity="center"
+            android:layout_height="match_parent" />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight=".7"
+            android:gravity="center"
+            android:text="40"
+            android:layout_gravity="center"
+            android:textColor="#1e1e1e"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="A+"
+            android:background="#AE9DBAD1"
+            android:textColor="#1e1e1e"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="4.00"
+            android:layout_gravity="center"
+            android:textColor="#1e1e1e"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="CSE-109"
+            android:textColor="#1e1e1e"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:background="#AE9DBAD1"
+            android:gravity="center"
+            android:text="Database Management System"
+            android:textColor="#1e1e1e" />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight=".8"
+            android:gravity="center"
+            android:text="3"
+            android:layout_gravity="center"
+            android:textColor="#1e1e1e"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="40"
+            android:background="#AE9DBAD1"
+            android:textColor="#1e1e1e"
+            android:layout_gravity="center"
+            android:layout_height="match_parent" />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight=".7"
+            android:gravity="center"
+            android:text="40"
+            android:layout_gravity="center"
+            android:textColor="#1e1e1e"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="A+"
+            android:background="#AE9DBAD1"
+            android:textColor="#1e1e1e"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="4.00"
+            android:layout_gravity="center"
+            android:textColor="#1e1e1e"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="CSE-109"
+            android:textColor="#1e1e1e"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:background="#AE9DBAD1"
+            android:gravity="center"
+            android:text="System Analysis and Design"
+            android:textColor="#1e1e1e" />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight=".8"
+            android:gravity="center"
+            android:text="3"
+            android:layout_gravity="center"
+            android:textColor="#1e1e1e"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="40"
+            android:background="#AE9DBAD1"
+            android:textColor="#1e1e1e"
+            android:layout_gravity="center"
+            android:layout_height="match_parent" />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight=".7"
+            android:gravity="center"
+            android:text="40"
+            android:layout_gravity="center"
+            android:textColor="#1e1e1e"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="A+"
+            android:background="#AE9DBAD1"
+            android:textColor="#1e1e1e"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="4.00"
+            android:layout_gravity="center"
+            android:textColor="#1e1e1e"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

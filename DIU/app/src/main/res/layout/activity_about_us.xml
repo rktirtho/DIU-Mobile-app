@@ -24,7 +24,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:layout_margin="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="@dimen/activity_horizontal_margin"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
                 android:padding="@dimen/activity_horizontal_margin"
                 card_view:cardCornerRadius="10dp"
                 card_view:cardElevation="@dimen/activity_horizontal_margin"
@@ -33,7 +35,8 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="vertical">
+                    android:orientation="vertical"
+                    android:padding="@dimen/activity_horizontal_margin">
 
                     <TextView
                         android:layout_width="match_parent"
@@ -84,8 +87,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:layout_margin="@dimen/activity_horizontal_margin"
-                android:padding="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="@dimen/activity_horizontal_margin"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
                 card_view:cardCornerRadius="10dp"
                 card_view:cardElevation="@dimen/activity_horizontal_margin"
                 card_view:cardPreventCornerOverlap="true">
@@ -93,6 +97,7 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:padding="@dimen/activity_horizontal_margin"
                     android:orientation="vertical">
 
                     <TextView
@@ -143,8 +148,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:layout_margin="@dimen/activity_horizontal_margin"
-                android:padding="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="@dimen/activity_horizontal_margin"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
                 card_view:cardCornerRadius="10dp"
                 card_view:cardElevation="@dimen/activity_horizontal_margin"
                 card_view:cardPreventCornerOverlap="true">
@@ -152,6 +158,7 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:padding="@dimen/activity_horizontal_margin"
                     android:orientation="vertical">
 
                     <TextView
@@ -202,8 +209,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:layout_margin="@dimen/activity_horizontal_margin"
-                android:padding="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="@dimen/activity_horizontal_margin"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
                 card_view:cardCornerRadius="10dp"
                 card_view:cardElevation="@dimen/activity_horizontal_margin"
                 card_view:cardPreventCornerOverlap="true">
@@ -211,6 +219,7 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:padding="@dimen/activity_horizontal_margin"
                     android:orientation="vertical">
 
                     <TextView
@@ -261,8 +270,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:layout_margin="@dimen/activity_horizontal_margin"
-                android:padding="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="@dimen/activity_horizontal_margin"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
                 card_view:cardCornerRadius="10dp"
                 card_view:cardElevation="@dimen/activity_horizontal_margin"
                 card_view:cardPreventCornerOverlap="true">
@@ -270,6 +280,7 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:padding="@dimen/activity_horizontal_margin"
                     android:orientation="vertical">
 
                     <TextView
@@ -321,8 +332,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:layout_margin="@dimen/activity_horizontal_margin"
-                android:padding="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="@dimen/activity_horizontal_margin"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
                 card_view:cardCornerRadius="10dp"
                 card_view:cardElevation="@dimen/activity_horizontal_margin"
                 card_view:cardPreventCornerOverlap="true">
@@ -330,6 +342,7 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:padding="@dimen/activity_horizontal_margin"
                     android:orientation="vertical">
 
                     <TextView

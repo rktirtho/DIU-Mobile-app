@@ -19,21 +19,42 @@ public class FaculityMenber extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_faculity_menber);
 
-        listView = findViewById(R.id.faculity_list);
 
-        List<Faculaty> faculaties = new ArrayList<>();
+        String selected= getIntent().getStringExtra("selected");
+        this.setTitle(selected);
 
-        faculaties.add(new Faculaty(R.drawable.key_p_prof_hasan_babu,"Professor Hafiz Md. Hasan Babu", "Member\nNominated By Syndicate"));
-        faculaties.add(new Faculaty(R.drawable.key_p_prof_hasan_babu,"Professor Hafiz Md. Hasan Babu", "Member\nNominated By Syndicate"));
-        faculaties.add(new Faculaty(R.drawable.key_p_prof_hasan_babu,"Professor Hafiz Md. Hasan Babu", "Member\nNominated By Syndicate"));
-        faculaties.add(new Faculaty(R.drawable.key_p_prof_hasan_babu,"Professor Hafiz Md. Hasan Babu", "Member\nNominated By Syndicate"));
-        faculaties.add(new Faculaty(R.drawable.key_p_prof_hasan_babu,"Professor Hafiz Md. Hasan Babu", "Member\nNominated By Syndicate"));
+        switch (selected){
+            case "Academic Council":
+                break;
+            case "Board of Trustees":
+                break;
+            case "Syndicate":
+                break;
+
+
+        }
 
 
 
 
-        CustomFaculityList faculityList = new CustomFaculityList(this,R.layout.model_faculity,faculaties);
-        listView.setAdapter(faculityList);
+//        listView = findViewById(R.id.faculity_list);
+//
+//
+//
+//
+//        List<Faculaty> faculaties = new ArrayList<>();
+//
+//        faculaties.add(new Faculaty(R.drawable.key_p_prof_hasan_babu,"Professor Hafiz Md. Hasan Babu", "Member\nNominated By Syndicate"));
+//        faculaties.add(new Faculaty(R.drawable.key_p_prof_hasan_babu,"Professor Hafiz Md. Hasan Babu", "Member\nNominated By Syndicate"));
+//        faculaties.add(new Faculaty(R.drawable.key_p_prof_hasan_babu,"Professor Hafiz Md. Hasan Babu", "Member\nNominated By Syndicate"));
+//        faculaties.add(new Faculaty(R.drawable.key_p_prof_hasan_babu,"Professor Hafiz Md. Hasan Babu", "Member\nNominated By Syndicate"));
+//        faculaties.add(new Faculaty(R.drawable.key_p_prof_hasan_babu,"Professor Hafiz Md. Hasan Babu", "Member\nNominated By Syndicate"));
+//
+//
+//
+//
+//        CustomFaculityList faculityList = new CustomFaculityList(this,R.layout.model_faculity,faculaties);
+//        listView.setAdapter(faculityList);
 
     }
 }

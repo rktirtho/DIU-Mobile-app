@@ -1,14 +1,158 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".Administration">
-    <ListView
-        android:id="@+id/lv_administration"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Administration"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/banner_size"
+        android:background="@drawable/library">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#AB0E0F0E"
+            android:gravity="bottom"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingBottom="@dimen/activity_horizontal_margin"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/un"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#fff"
+                android:textSize="@dimen/h2"
+                android:textStyle="bold"
+                android:text="Dhaka international University"
+                android:textAllCaps="true"
+                android:layout_alignParentBottom="true"/>
+            <TextView
+                android:id="@+id/lb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/heading"
+                android:textColor="#fff"
+                android:textStyle="bold"
+                android:gravity="bottom"
+                android:shadowColor="#fff"
+                android:layout_alignParentBottom="true"
+                android:fontFamily="sans-serif"
 
-</RelativeLayout>
+                android:text="Administration"/>
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:orientation="horizontal">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_margin="@dimen/activity_horizontal_margin_half"
+                app:cardCornerRadius="5dp">
+
+
+                <Button
+                    android:id="@+id/btn_academic"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:drawableTop="@drawable/ic_person_black_24dp"
+                    android:text="Academic Council"
+                    android:background="@color/cardview_light_background"
+                    android:layout_gravity="center"
+                    android:textAllCaps="false"
+                    android:gravity="center"
+                    />
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_margin="@dimen/activity_horizontal_margin_half"
+                app:cardCornerRadius="5dp">
+
+                <Button
+                    android:id="@+id/btn_bot"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:drawableTop="@drawable/req_docs"
+                    android:text="Board of Trustees"
+                    android:textAllCaps="false"
+                    android:background="@color/cardview_light_background"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    />
+            </android.support.v7.widget.CardView>
+
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:orientation="horizontal">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_margin="@dimen/activity_horizontal_margin_half"
+                app:cardCornerRadius="5dp">
+
+
+                <Button
+                    android:id="@+id/btn_syndicate"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:drawableTop="@drawable/money"
+                    android:text="Member of Syndicate"
+                    android:textAllCaps="false"
+                    android:background="@color/cardview_light_background"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    />
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_margin="@dimen/activity_horizontal_margin_half"
+                app:cardCornerRadius="5dp">
+
+
+                <Button
+                    android:id="@+id/btn_vc"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:drawableTop="@drawable/money"
+                    android:text="Vice Chancellors"
+                    android:textAllCaps="false"
+                    android:background="@color/cardview_light_background"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    />
+
+            </android.support.v7.widget.CardView>
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

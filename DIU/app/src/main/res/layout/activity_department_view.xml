@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".DepartmentView">
+
+    <RelativeLayout
+        android:id="@+id/rl"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/banner_size"
+        android:background="@drawable/library">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#AB0E0F0E"
+            android:gravity="bottom"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingBottom="@dimen/activity_horizontal_margin">
+
+            <TextView
+                android:id="@+id/un"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:text="Dhaka international University"
+                android:textAllCaps="true"
+                android:textColor="#fff"
+                android:textSize="@dimen/h2"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_dept"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:fontFamily="sans-serif"
+                android:gravity="bottom"
+                android:shadowColor="#fff"
+                android:text="Department Of CSE"
+                android:textColor="#fff"
+                android:textSize="@dimen/heading"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/activity_horizontal_margin">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="@dimen/activity_horizontal_margin_half">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/activity_horizontal_margin_half"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Introduction"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/heading"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tv_introduction"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/dept_cse_introduction"
+                        android:textColor="@color/colorBlack" />
+
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="@dimen/activity_horizontal_margin_half">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/activity_horizontal_margin_half"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Mission"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/heading"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tv_mission"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/dept_cse_mission"
+                        android:textColor="@color/colorBlack" />
+
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="@dimen/activity_horizontal_margin_half">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/activity_horizontal_margin_half"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Vision"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/heading"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tv_vission"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/dept_cse_introduction"
+                        android:textColor="@color/colorBlack" />
+
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/activity_horizontal_margin"
+                android:paddingBottom="@dimen/activity_horizontal_margin"
+                android:text="Chairman"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/heading"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/iv_chairman"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_gravity="center"
+                android:src="@drawable/key_p_prof_hasan_babu" />
+
+            <TextView
+                android:id="@+id/tv_chairName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="@dimen/activity_horizontal_margin"
+                android:text="Prof. A.T.M Mahbubur Rahman"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/activity_horizontal_margin"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/activity_horizontal_margin"
+                android:paddingBottom="@dimen/activity_horizontal_margin"
+                android:text="Faculty Member"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/heading"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="upcoming" />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

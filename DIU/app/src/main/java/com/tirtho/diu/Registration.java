@@ -33,6 +33,7 @@ public class Registration extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.btn_login:
                 startActivity(new Intent(Registration.this, LoginActivity.class));
+                Registration.this.finish();
                 break;
         }
 

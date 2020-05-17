@@ -8,26 +8,66 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@drawable/uni_logo"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/logo"
+        android:roundIcon="@drawable/round_logo"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Registration"></activity>
-        <activity android:name=".TransectionDetails" android:label="Statement"/>
-        <activity android:name=".AccountDetails" android:label="Account Details"/>
-        <activity android:name=".Admission" android:label="Admission"/>
-        <activity android:name=".StudentsCommunity" android:label="Club and Community"/>
-        <activity android:name=".Gallery" android:label="Photo Gallery"/>
-        <activity android:name=".Transport" android:label="Transport"/>
-        <activity android:name=".FaculityMenber" android:label="BoT"/>
-        <activity android:name=".Administration" android:label="Administration"/>
-        <activity android:name=".AcademicCalendar" android:label="Academic Calender"/>
-        <activity android:name=".RulesAndRegulation" android:label="Rules and Regulation"/>
-        <activity android:name=".ClassRoutine" android:label="Class Routine"/>
-        <activity android:name=".AboutUs" android:label="About Us"/>
+        <activity android:name=".ViceChancelor"></activity>
+        <activity android:name=".Club" />
+        <activity android:name=".Library" />
+        <activity android:name=".DepartmentView" />
+        <activity android:name=".Department" />
+        <activity android:name=".Contact" />
+        <activity
+            android:name=".Profile"
+            android:icon="@drawable/ic_account_circle_white_24dp"
+            android:label="Academic Profile" />
+        <activity android:name=".AcademicResult" />
+        <activity
+            android:name=".Notice"
+            android:label="Notices" />
+        <activity android:name=".Registration" />
+        <activity
+            android:name=".TransectionDetails"
+            android:label="Statement" />
+        <activity
+            android:name=".AccountDetails"
+            android:label="Account Details" />
+        <activity
+            android:name=".Admission"
+            android:label="Admission" />
+        <activity
+            android:name=".StudentsCommunity"
+            android:label="Club and Community" />
+        <activity
+            android:name=".Gallery"
+            android:label="Photo Gallery" />
+        <activity
+            android:name=".Transport"
+            android:label="Transport" />
+        <activity
+            android:name=".FaculityMenber"
+            android:label="BoT" />
+        <activity
+            android:name=".Administration"
+            android:label="Administration" />
+        <activity
+            android:name=".AcademicCalendar"
+            android:label="Academic Calender" />
+        <activity
+            android:name=".RulesAndRegulation"
+            android:label="Rules and Regulation" />
+        <activity
+            android:name=".ClassRoutine"
+            android:label="Class Routine" />
+        <activity
+            android:name=".AboutUs"
+            android:label="About Us" />
         <activity android:name=".BrowserActivity" />
-        <activity android:name=".LoginActivity" android:label="Login"/>
+        <activity
+            android:name=".LoginActivity"
+            android:label="Login" />
         <activity
             android:name=".MainActivity"
             android:label="@string/app_title"

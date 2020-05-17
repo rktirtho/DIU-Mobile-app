@@ -36,16 +36,20 @@
     </item>
 
 
-    <item android:title="Info">
+    <item android:title="Academics">
         <menu>
             <item
                 android:id="@+id/nav_administration"
                 android:icon="@drawable/ic_person_black_24dp"
                 android:title="@string/menu_administration" />
+            <!--<item-->
+                <!--android:id="@+id/nav_faculity_members"-->
+                <!--android:icon="@drawable/ic_local_library_black_24dp"-->
+                <!--android:title="@string/menu_faculity_member" />-->
             <item
-                android:id="@+id/nav_faculity_members"
-                android:icon="@drawable/ic_local_library_black_24dp"
-                android:title="@string/menu_faculity_member" />
+                android:id="@+id/nav_dept"
+                android:icon="@drawable/ic_device_hub_black_24dp"
+                android:title="@string/menu_depertment" />
             <item
                 android:id="@+id/nav_student_comunity"
                 android:icon="@drawable/ic_people_black_24dp"
@@ -59,11 +63,25 @@
                 android:icon="@drawable/ic_menu_gallery"
                 android:title="@string/menu_gallery" />
 
+
         </menu>
     </item>
 
-    <item android:title="Academics">
+    <item android:title="Info">
         <menu>
+
+            <item
+                android:id="@+id/nav_admission"
+                android:icon="@drawable/req_docs"
+                android:title="@string/menu_admission" />
+            <item
+                android:id="@+id/nav_library"
+                android:icon="@drawable/ic_library_books_black_24dp"
+                android:title="@string/menu_admission" />
+            <item
+                android:id="@+id/nav_contact"
+                android:icon="@drawable/ic_add_box_black_24dp"
+                android:title="@string/menu_contact" />
             <item
                 android:id="@+id/nav_faq"
                 android:icon="@drawable/ic_question_answer_black_24dp"
@@ -76,14 +94,6 @@
                 android:id="@+id/nav_exam_guidline"
                 android:icon="@drawable/ic_edit_black_24dp"
                 android:title="@string/menu_exam_guidline" />
-            <item
-                android:id="@+id/nav_credit_transfer"
-                android:icon="@drawable/ic_menu_send"
-                android:title="@string/menu_credit_transfer" />
-            <item
-                android:id="@+id/nav_admission"
-                android:icon="@drawable/ic_add_box_black_24dp"
-                android:title="@string/menu_admission" />
 
         </menu>
 
@@ -92,10 +102,7 @@
 
     <item android:title="Academics">
         <menu>
-            <item
-                android:id="@+id/nav_settings"
-                android:icon="@drawable/ic_settings_black_24dp"
-                android:title="@string/menu_settings" />
+
             <item
                 android:id="@+id/nav_about"
                 android:icon="@drawable/ic_account_circle_black_24dp"

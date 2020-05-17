@@ -6,47 +6,195 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".Admission">
-    <ScrollView
+
+    <RelativeLayout
+        android:id="@+id/rl"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="@dimen/banner_size"
+        android:background="@drawable/admission_info">
         <LinearLayout
             android:layout_width="match_parent"
-            android:orientation="vertical"
-            android:layout_height="match_parent">
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Admission Eligibility"
-                android:gravity="center"
-                android:layout_marginTop="@dimen/activity_horizontal_margin"
-                android:textColor="#1e1e1e"
-                android:textStyle="bold"/>
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:textColor="#1e1e1e"
-                android:padding="@dimen/activity_horizontal_margin"
-                android:text="@string/text_admission"/>
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Required Documents"
-                android:gravity="center"
-                android:layout_marginTop="@dimen/activity_horizontal_margin"
-                android:textColor="#1e1e1e"
-                android:textStyle="bold"/>
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:textColor="#1e1e1e"
-                android:padding="@dimen/activity_horizontal_margin"
-                android:text="@string/text_admission_req"/>
+            android:layout_height="match_parent"
+            android:background="#AB0E0F0E"
+            android:gravity="bottom"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingBottom="@dimen/activity_horizontal_margin"
+            android:orientation="vertical">
+            <!--<TextView-->
+                <!--android:id="@+id/un"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:textColor="#fff"-->
+                <!--android:textSize="@dimen/h2"-->
+                <!--android:textStyle="bold"-->
+                <!--android:text="Dhaka international University"-->
+                <!--android:textAllCaps="true"-->
+                <!--android:layout_alignParentBottom="true"/>-->
+            <!--<TextView-->
+                <!--android:id="@+id/tv_dept"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:textSize="@dimen/heading"-->
+                <!--android:textColor="#fff"-->
+                <!--android:textStyle="bold"-->
+                <!--android:gravity="bottom"-->
+                <!--android:shadowColor="#fff"-->
+                <!--android:layout_alignParentBottom="true"-->
+                <!--android:fontFamily="sans-serif"-->
+                <!--android:text="Department Of CSE"/>-->
 
         </LinearLayout>
-    </ScrollView>
+
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:orientation="horizontal">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_margin="@dimen/activity_horizontal_margin"
+                app:cardCornerRadius="5dp">
+
+
+                <Button
+                    android:id="@+id/btn_add_aligibility"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:drawableTop="@drawable/ic_person_black_24dp"
+                    android:text="Admission Aligibility"
+                    android:background="@color/cardview_light_background"
+                    android:layout_gravity="center"
+                    android:textAllCaps="false"
+                    android:gravity="center"
+                   />
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_margin="@dimen/activity_horizontal_margin"
+                app:cardCornerRadius="5dp">
+
+                <Button
+                    android:id="@+id/btn_required_doc"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:drawableTop="@drawable/req_docs"
+                    android:text="Required Documents"
+                    android:textAllCaps="false"
+                    android:background="@color/cardview_light_background"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    />
+            </android.support.v7.widget.CardView>
+
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:orientation="horizontal">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_margin="@dimen/activity_horizontal_margin"
+                app:cardCornerRadius="5dp">
+
+
+                <Button
+                    android:id="@+id/btn_tuition_fee"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:drawableTop="@drawable/money"
+                    android:text="Tuition Fee"
+                    android:textAllCaps="false"
+                    android:background="@color/cardview_light_background"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    />
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_margin="@dimen/activity_horizontal_margin"
+                app:cardCornerRadius="5dp">
+
+                <Button
+                    android:id="@+id/btn_finantialAss"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:drawableTop="@drawable/man"
+                    android:text="Financial Assistant"
+                    android:textAllCaps="false"
+                    android:background="@color/cardview_light_background"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    />
+            </android.support.v7.widget.CardView>
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <!--<ScrollView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent">-->
+        <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:orientation="vertical"-->
+            <!--android:layout_height="match_parent">-->
+            <!--<TextView-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="Admission Eligibility"-->
+                <!--android:gravity="center"-->
+                <!--android:layout_marginTop="@dimen/activity_horizontal_margin"-->
+                <!--android:textColor="#1e1e1e"-->
+                <!--android:textStyle="bold"/>-->
+
+            <!--<TextView-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:textColor="#1e1e1e"-->
+                <!--android:padding="@dimen/activity_horizontal_margin"-->
+                <!--android:text="@string/text_admission"/>-->
+
+            <!--<TextView-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="Required Documents"-->
+                <!--android:gravity="center"-->
+                <!--android:layout_marginTop="@dimen/activity_horizontal_margin"-->
+                <!--android:textColor="#1e1e1e"-->
+                <!--android:textStyle="bold"/>-->
+
+            <!--<TextView-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:textColor="#1e1e1e"-->
+                <!--android:padding="@dimen/activity_horizontal_margin"-->
+                <!--android:text="@string/text_admission_req"/>-->
+
+        <!--</LinearLayout>-->
+    <!--</ScrollView>-->
 
 
 </LinearLayout>

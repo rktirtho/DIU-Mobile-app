@@ -67,7 +67,7 @@
                     android:id="@+id/btn_add_aligibility"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:drawableTop="@drawable/ic_person_black_24dp"
+                    android:drawableTop="@drawable/ic_certificate"
                     android:text="Admission Aligibility"
                     android:background="@color/cardview_light_background"
                     android:layout_gravity="center"

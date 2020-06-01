@@ -76,12 +76,12 @@ public class AllocatedCourse {
         this.courseType = courseType;
     }
 
-//    public Marks getMarks() {
-//        return marks;
-//    }
-//
-//    public void setMarks(Marks marks) {
-//        this.marks = marks;
-//    }
+    public Marks getMarks() {
+        return marks;
+    }
+
+    public void setMarks(Marks marks) {
+        this.marks = marks;
+    }
 
 }

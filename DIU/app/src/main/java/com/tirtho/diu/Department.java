@@ -8,6 +8,12 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
+import com.tirtho.com.tirtho.diu.custome.list.CustomClubList;
+import com.tirtho.pojo.StudentCommunity;
+
+import java.util.ArrayList;
+import java.util.List;
+
 public class Department extends AppCompatActivity {
     ListView listView;
 
@@ -16,29 +22,32 @@ public class Department extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_department);
 
+        final List<StudentCommunity> departments = new ArrayList<>();
+        departments.add(new StudentCommunity(R.drawable.dept_business, "Department of Business AdministrationService"));
+        departments.add(new StudentCommunity(R.drawable.dept_cvl, "Department of Civil Engineering"));
+        departments.add(new StudentCommunity(R.drawable.dept_com, "Department of CSE"));
+        departments.add(new StudentCommunity(R.drawable.dept_comm, "Department of Economics"));
+        departments.add(new StudentCommunity(R.drawable.dept_eee, "Department of EETE"));
+        departments.add(new StudentCommunity(R.drawable.dept_english, "Department of English"));
+        departments.add(new StudentCommunity(R.drawable.dept_law, "Department of Law"));
+        departments.add(new StudentCommunity(R.drawable.dept_pharmacy, "Department of Pharmacy"));
+        departments.add(new StudentCommunity(R.drawable.dept_comm, "Department of Sociology"));
+        departments.add(new StudentCommunity(R.drawable.dept_comm, "Department of Political Science"));
         listView = findViewById(R.id.list_dept);
 
-        final String[] departments= {
-                "Department of Business Administration",
-                "Department of Civil Engineering",
-                "Department of CSE",
-                "Department of EETE",
-                "Department of English",
-                "Department of Law",
-                "Department of Pharmacy",
-                "Department of Sociology",
-                "Department of Economics",
-                "Department of Political Science"
-        };
 
-        ArrayAdapter adapter = new ArrayAdapter(this,R.layout.model_department,R.id.dept_name,departments);
-        listView.setAdapter(adapter);
+
+
+
+
+        CustomClubList deptList = new CustomClubList(this, R.layout.model_student_community,departments);
+        listView.setAdapter(deptList);
 
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 Intent intent = new Intent(Department.this, DepartmentView.class);
-                intent.putExtra("dept_name", departments[position]);
+                intent.putExtra("dept_name", departments.get(position).getName());
                 intent.putExtra("dept_code", position);
                 startActivity(intent);
 

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".AdmitionRequired">
+    <RelativeLayout
+        android:id="@+id/rl"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/banner_size"
+        android:background="@drawable/admission_info">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#AB0E0F0E"
+            android:gravity="bottom"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingBottom="@dimen/activity_horizontal_margin"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/un"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#fff"
+                android:textSize="@dimen/h2"
+                android:textStyle="bold"
+                android:text="Dhaka international University"
+                android:textAllCaps="true"
+                android:layout_alignParentBottom="true"/>
+            <TextView
+                android:id="@+id/tv_fact"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/heading"
+                android:textColor="#fff"
+                android:textStyle="bold"
+                android:gravity="bottom"
+                android:shadowColor="#fff"
+                android:layout_alignParentBottom="true"
+                android:fontFamily="sans-serif"
+                android:textAllCaps="true"
+                android:text="Transport Services"/>
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/info"
+        android:padding="@dimen/activity_horizontal_margin"
+        android:layout_width="match_parent"
+        android:text="@string/admission_eligibility"
+        android:textColor="@color/colorBlack"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

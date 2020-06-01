@@ -15,7 +15,7 @@ import java.util.List;
 
 public class Administration extends AppCompatActivity implements View.OnClickListener {
 
-    Button btnAccademic, btnBot,btnSindicate;
+    Button btnAccademic, btnBot,btnSindicate,btnVc;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -23,10 +23,12 @@ public class Administration extends AppCompatActivity implements View.OnClickLis
         btnAccademic = findViewById(R.id.btn_academic);
         btnSindicate = findViewById(R.id.btn_syndicate);
         btnBot = findViewById(R.id.btn_bot);
+        btnVc= findViewById(R.id.btn_vc);
 
         btnSindicate.setOnClickListener(this);
         btnBot.setOnClickListener(this);
         btnAccademic.setOnClickListener(this);
+        btnVc.setOnClickListener(this);
 
 
 

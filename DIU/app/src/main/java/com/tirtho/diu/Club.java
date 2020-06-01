@@ -17,7 +17,7 @@ public class Club extends AppCompatActivity {
         tvMission =  findViewById(R.id.tv_mission);
         tvVission = findViewById(R.id.tv_vission);
         tvName = findViewById(R.id.tv_name);
-        tvRegistration = findViewById(R.id.regestration);
+        tvRegistration = findViewById(R.id.tv_registration);
 
         String clubName=getIntent().getStringExtra("name");
         tvName.setText(clubName);

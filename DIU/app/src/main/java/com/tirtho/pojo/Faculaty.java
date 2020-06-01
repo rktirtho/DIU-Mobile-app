@@ -1,25 +1,28 @@
 package com.tirtho.pojo;
 
-import android.graphics.drawable.Drawable;
+
+import com.google.gson.annotations.Expose;
+import com.google.gson.annotations.SerializedName;
 
 public class Faculaty {
-    private int image;
+    @SerializedName("image")
+    @Expose
+    private String image;
+
+    @SerializedName("name")
+    @Expose
     private String name;
+
+    @SerializedName("designation")
+    @Expose
     private String designation;
 
 
-
-    public Faculaty(int image, String name, String designation) {
-        this.image = image;
-        this.name = name;
-        this.designation = designation;
-    }
-
-    public int getImage() {
+    public String getImage() {
         return image;
     }
 
-    public void setImage(int image) {
+    public void setImage(String image) {
         this.image = image;
     }
 

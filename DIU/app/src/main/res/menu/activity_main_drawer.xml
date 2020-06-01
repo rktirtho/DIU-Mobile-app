@@ -77,7 +77,7 @@
             <item
                 android:id="@+id/nav_library"
                 android:icon="@drawable/ic_library_books_black_24dp"
-                android:title="@string/menu_admission" />
+                android:title="@string/menu_library" />
             <item
                 android:id="@+id/nav_contact"
                 android:icon="@drawable/ic_add_box_black_24dp"

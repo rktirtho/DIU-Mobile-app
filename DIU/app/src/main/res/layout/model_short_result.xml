@@ -1,18 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:padding="@dimen/activity_horizontal_margin"
-    tools:context=".AcademicResult">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="@dimen/activity_horizontal_margin">
 
     <android.support.v7.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:cardCornerRadius="@dimen/cardview_default_radius"
-        android:layout_margin="@dimen/activity_horizontal_margin_half"
         >
 
 
@@ -22,65 +18,61 @@
             android:padding="@dimen/activity_horizontal_margin_half">
 
             <TextView
-                android:id="@+id/std_name"
+                android:id="@+id/semester"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:padding="5dp"
+                android:text="Semester 1"
                 android:layout_centerHorizontal="true"
                 android:textStyle="bold"
                 android:textColor="@color/colorBlack"/>
 
             <TextView
-                android:id="@+id/roll"
-                android:layout_below="@id/std_name"
+                android:id="@+id/total_subject"
+                android:layout_below="@id/semester"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="Total Subject : 6"
+                android:textColor="@color/colorBlack"/>
+
+            <TextView
+                android:id="@+id/total_credit"
+                android:layout_below="@id/semester"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Total Credit : 13"
                 android:padding="5dp"
                 android:layout_alignParentRight="true"
                 android:textColor="@color/colorBlack"/>
 
             <TextView
-                android:id="@+id/registration_no"
-                android:layout_below="@id/std_name"
+                android:id="@+id/scgpa"
+                android:layout_below="@+id/total_subject"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:text="Semester CGPA : 3.30"
                 android:padding="5dp"
                 android:textColor="@color/colorBlack"/>
 
             <TextView
-                android:id="@+id/total_credit_earned"
-                android:layout_below="@+id/roll"
+                android:id="@+id/lgrade"
+                android:layout_below="@+id/total_subject"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:padding="5dp"
-                android:textColor="@color/colorBlack"/>
-
-            <TextView
-                android:id="@+id/extemped_credit"
-                android:layout_below="@+id/roll"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:padding="5dp"
-                android:layout_alignParentRight="true"
-                android:textColor="@color/colorBlack"/>
-
-
-
-            <TextView
-                android:id="@+id/later_grade"
-                android:layout_below="@+id/total_credit_earned"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:text="Later Grade : B+"
                 android:padding="5dp"
                 android:layout_alignParentRight="true"
                 android:textColor="@color/colorBlack"/>
 
             <TextView
-                android:id="@+id/cgpa"
-                android:layout_below="@+id/total_credit_earned"
+                android:id="@+id/semester_result"
+                android:layout_below="@+id/scgpa"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:text="Result : Passed"
                 android:padding="5dp"
+                android:layout_centerInParent="true"
                 android:textColor="@color/colorBlack"/>
 
         </RelativeLayout>
@@ -88,12 +80,6 @@
 
     </android.support.v7.widget.CardView>
 
-
-
-    <ListView
-        android:id="@+id/resultCart"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"></ListView>
 
 
 </LinearLayout>

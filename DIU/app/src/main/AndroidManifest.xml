@@ -13,7 +13,8 @@
         android:roundIcon="@drawable/round_logo"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ViceChancelor"></activity>
+        <activity android:name=".AdmitionRequired"></activity>
+        <activity android:name=".ViceChancelor" />
         <activity android:name=".Club" />
         <activity android:name=".Library" />
         <activity android:name=".DepartmentView" />

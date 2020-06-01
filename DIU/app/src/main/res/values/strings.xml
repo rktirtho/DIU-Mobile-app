@@ -44,14 +44,14 @@
     <string name="menu_about">About</string>
     <string name="text_admission_req">For Undergraduate/ Honors Program:
 
-\n> Original Transcript \u0026 Certificate of S.S.C. or Equivalent with 2 photocopies.
-\n> Original Transcript \u0026 Certificate of H.S.C. or Equivalent with 2 photocopies.
-\n> 7 Copies of Pass Port size Photograph .
-\n> For Master’s / Graduate Program:
-\n> Original Transcript \u0026 Certificate of S.S.C. or Equivalent with 2 photocopies.
-\n> Original Transcript \u0026 Certificate of H.S.C. or Equivalent with 2 photocopies.
-\n> Original Transcript \u0026 Certificate of Undergraduate/ Honor’s Program with 2 photocopies.
-\n> 7 Copies of Pass Port size Photograph .</string>
+\n-->> Original Transcript \u0026 Certificate of S.S.C. or Equivalent with 2 photocopies.
+\n-->> Original Transcript \u0026 Certificate of H.S.C. or Equivalent with 2 photocopies.
+\n-->> 7 Copies of Pass Port size Photograph .
+\n-->> For Master’s / Graduate Program:
+\n-->> Original Transcript \u0026 Certificate of S.S.C. or Equivalent with 2 photocopies.
+\n-->> Original Transcript \u0026 Certificate of H.S.C. or Equivalent with 2 photocopies.
+\n-->> Original Transcript \u0026 Certificate of Undergraduate/ Honor’s Program with 2 photocopies.
+\n-->> 7 Copies of Pass Port size Photograph .</string>
 
 
     <string name="text_admission">Candidates seeking admission must apply in prescribed application Form which can be collected on payment of Tk. 1000.00 Candidates having 2nd division or at least GPA 2.50 in both SSC \u0026 HSC examinations, or their equivalents are eligible to apply for admission into Honours program in Law,English, Sociology and Business Administration. For B.Sc in (Computer Science u0026 Engineering), B.Sc.( Electrical, Electronics and Telecommunication Engineering) and B.Sc (Civil Engineering) programs, candidate must have physics \u0026 Mathematics at their HSC level.For Bachelor of Pharmacy (B.Pharm.) program, candidates must have Biology \u0026 Chemistry at their HSC level.For LL.M (2 years), M.A English (2.5 Years), MSS Sociology (2 Years), MHRL, and MBA programs, the applicants must have at least Bachelor Degree with GPA-2.00 (minimum). For LL.M (2 Years), student must complete LL.B (Pass) Course.</string>
@@ -155,13 +155,12 @@
     <string name="dept_political_science_vission">To acquaint knowledge and excellence that brings out to our graduates with high technical competencies and promotes hig h - end research which m akes them ethically strong engineers to build our nation.</string>
 
 
-
-
-
     <string name="club_cpc_introduction">DIU Computer and Programming Club (DIU CPC) is one of the largest and popular club of Dhaka International University which is established on 2014. Currently it has 150 registered members. DIU CPC arranges different different kind of even in every year. One hundred plus students are learning programming under the students skill development project(SSDP) of DIU CPC.</string>
     <string name="club_cpc_mission">The mission of DIU CPC is making skillful IT person who can meet the challenge of present world. And create, share, and apply knowledge in Computer Science.</string>
     <string name="club_cpc_vision">The vision of DIU CPC is helping students to enrich their knowledge of computer and programming.</string>
     <string name="club_cpc_registration">Usualy CPC takes mamber in the month of January, May, October. Registration fee is 100/- BDT.</string>
+    <string name="menu_library">Library</string>
+    <string name="admission_eligibility"><![CDATA[Candidates seeking admission must apply in prescribed application Form which can be collected on payment of Tk. 1000.00 Candidates having 2nd division or at least GPA 2.50 in both SSC & HSC examinations, or their equivalents are eligible to apply for admission into Honours program in Law,English, Sociology and Business Administration. For B.Sc in (Computer Science & Engineering), B.Sc.( Electrical, Electronics and Telecommunication Engineering) and B.Sc (Civil Engineering) programs, candidate must have physics & Mathematics at their HSC level.For Bachelor of Pharmacy (B.Pharm.) program, candidates must have Biology & Chemistry at their HSC level.For LL.M (2 years), M.A English (2.5 Years), MSS Sociology (2 Years), MHRL, and MBA programs, the applicants must have at least Bachelor Degree with GPA-2.00 (minimum). For LL.M (2 Years), student must complete LL.B (Pass) Course.]]></string>
 
 
 </resources>

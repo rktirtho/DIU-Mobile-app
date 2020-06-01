@@ -29,9 +29,9 @@ public class Semester {
     @Expose
     private String semesterResult;
 
-    @SerializedName("allocated_courses")
-    @Expose
-    private List<AllocatedCourse> allocatedCourses = null;
+//    @SerializedName("allocated_courses")
+//    @Expose
+//    private List<AllocatedCourse> allocatedCourses = null;
 
     public String getSemester() {
         return semester;
@@ -93,17 +93,17 @@ public class Semester {
         this.semesterResult = semesterResult;
     }
 
-    public List<AllocatedCourse> getAllocatedCourses() {
-        return allocatedCourses;
-    }
-
-    public void setAllocatedCourses(List<AllocatedCourse> allocatedCourses) {
-        this.allocatedCourses = allocatedCourses;
-    }
-
-    public void setAllocatedCourses(String allocatedCourses) {
-
-    }
+//    public List<AllocatedCourse> getAllocatedCourses() {
+//        return allocatedCourses;
+//    }
+//
+//    public void setAllocatedCourses(List<AllocatedCourse> allocatedCourses) {
+//        this.allocatedCourses = allocatedCourses;
+//    }
+//
+//    public void setAllocatedCourses(String allocatedCourses) {
+//
+//    }
 
 
 }

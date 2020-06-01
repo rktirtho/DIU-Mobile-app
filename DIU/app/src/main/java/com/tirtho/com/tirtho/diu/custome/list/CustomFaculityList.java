@@ -10,7 +10,10 @@ import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.bumptech.glide.Glide;
+import com.bumptech.glide.load.engine.DiskCacheStrategy;
 import com.tirtho.diu.R;
+import com.tirtho.diu.com.tirtho.others.ServiceHelper;
 import com.tirtho.pojo.Faculaty;
 
 import java.util.List;
@@ -54,7 +57,14 @@ public class CustomFaculityList extends ArrayAdapter<Faculaty> {
         Faculaty faculaty = faculaties.get(position);
 
         //adding values to the list item
-        image.setImageDrawable(context.getResources().getDrawable(faculaty.getImage()));
+
+        Glide.with(context)
+                .load(faculaty.getImage())
+                .placeholder(R.drawable.prof_placeholder)
+                .error(R.drawable.prof_placeholder)
+                .diskCacheStrategy(DiskCacheStrategy.ALL)
+                .into(image);
+
         name.setText(faculaty.getName());
         designation.setText(faculaty.getDesignation());
 

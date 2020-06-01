@@ -9,7 +9,7 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="@dimen/banner_size"
-        android:background="@drawable/library">
+        android:background="@drawable/bg_administrative">
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -67,7 +67,7 @@
                     android:id="@+id/btn_academic"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:drawableTop="@drawable/ic_person_black_24dp"
+                    android:drawableTop="@drawable/ic_counsile"
                     android:text="Academic Council"
                     android:background="@color/cardview_light_background"
                     android:layout_gravity="center"
@@ -88,7 +88,7 @@
                     android:id="@+id/btn_bot"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:drawableTop="@drawable/req_docs"
+                    android:drawableTop="@drawable/ic_syndicate"
                     android:text="Board of Trustees"
                     android:textAllCaps="false"
                     android:background="@color/cardview_light_background"
@@ -117,7 +117,7 @@
                     android:id="@+id/btn_syndicate"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:drawableTop="@drawable/money"
+                    android:drawableTop="@drawable/ic_syndicate"
                     android:text="Member of Syndicate"
                     android:textAllCaps="false"
                     android:background="@color/cardview_light_background"
@@ -139,7 +139,7 @@
                     android:id="@+id/btn_vc"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:drawableTop="@drawable/money"
+                    android:drawableTop="@drawable/ic_vc"
                     android:text="Vice Chancellors"
                     android:textAllCaps="false"
                     android:background="@color/cardview_light_background"

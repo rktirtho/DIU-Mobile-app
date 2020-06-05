@@ -15,6 +15,7 @@ import com.tirtho.diu.R;
 import com.tirtho.pojo.Notice;
 import com.tirtho.pojo.StudentCommunity;
 
+import java.util.Collections;
 import java.util.List;
 import java.util.Random;
 
@@ -33,6 +34,7 @@ public class NoticeAdepter extends ArrayAdapter<Notice> {
         super(context, resource, notices);
         this.context = context;
         this.resource = resource;
+        Collections.reverse(notices);
         this.notices = notices;
     }
 
@@ -49,26 +51,15 @@ public class NoticeAdepter extends ArrayAdapter<Notice> {
         View view = layoutInflater.inflate(resource, null, false);
 
 
-
         //getting the view elements of the list from the view
         TextView date= view.findViewById(R.id.tv_date);
         TextView title = view.findViewById(R.id.tv_title);
-        TextView text = view.findViewById(R.id.tv_text);
-
-        Random random = new Random();
-        int r=random.nextInt(255);
-        int g=random.nextInt(255);
-        int b=random.nextInt(255);
-
-        date.setBackgroundColor(Color.rgb(r,g,b));
-
         //getting the hero of the specified position
         Notice notice = notices.get(position);
 
         //adding values to the list item
         date.setText(notice.getDate());
         title.setText(notice.getTitle());
-        text.setText(notice.getText());
 
         //adding a click listener to the button to remove item from the list
 

@@ -161,6 +161,8 @@
     <string name="club_cpc_registration">Usualy CPC takes mamber in the month of January, May, October. Registration fee is 100/- BDT.</string>
     <string name="menu_library">Library</string>
     <string name="admission_eligibility"><![CDATA[Candidates seeking admission must apply in prescribed application Form which can be collected on payment of Tk. 1000.00 Candidates having 2nd division or at least GPA 2.50 in both SSC & HSC examinations, or their equivalents are eligible to apply for admission into Honours program in Law,English, Sociology and Business Administration. For B.Sc in (Computer Science & Engineering), B.Sc.( Electrical, Electronics and Telecommunication Engineering) and B.Sc (Civil Engineering) programs, candidate must have physics & Mathematics at their HSC level.For Bachelor of Pharmacy (B.Pharm.) program, candidates must have Biology & Chemistry at their HSC level.For LL.M (2 years), M.A English (2.5 Years), MSS Sociology (2 Years), MHRL, and MBA programs, the applicants must have at least Bachelor Degree with GPA-2.00 (minimum). For LL.M (2 Years), student must complete LL.B (Pass) Course.]]></string>
+    <string name="title_activity_student_portal">StudentPortal</string>
+    <string name="menu_tools">Tools</string>
 
 
 </resources>

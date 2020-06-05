@@ -18,6 +18,7 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -30,12 +31,14 @@ public class MainActivity extends AppCompatActivity
 
     private TextView dateTimeDisplay, day, status;
     RelativeLayout statusBox;
+    LinearLayout llNotice, llEvent;
     private Calendar calendar;
     private SimpleDateFormat dateFormat;
     private String date;
     public static String token;
 
     SharedPreferences preferences;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -49,16 +52,24 @@ public class MainActivity extends AppCompatActivity
         status = findViewById(R.id.status);
         statusBox = findViewById(R.id.status_box);
 
+        llNotice = findViewById(R.id.llNotice);
+        llEvent = findViewById(R.id.llEvent);
+
+
+        llNotice.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, Notice.class));
+            }
+        });
+
+
         preferences = getSharedPreferences(LoginActivity.mySharedPreference, Context.MODE_PRIVATE);
 
         boolean isLogin = preferences.getBoolean(LoginActivity.isLogin, false);
         token = preferences.getString(LoginActivity.TOKEN, "miss");
 
-        if (!isLogin) {
-            Intent intent = new Intent(this, LoginActivity.class);
-            startActivity(intent);
-            this.finish();
-        }
+
 
         calendar = Calendar.getInstance();
         dateFormat = new SimpleDateFormat("MM/dd/yyyy");
@@ -180,7 +191,7 @@ public class MainActivity extends AppCompatActivity
 
 
         if (id == R.id.nav_home) {
-            // Handle the camera action
+
         } else if (id == R.id.nav_class_routine) {
             startActivity(new Intent(MainActivity.this, ClassRoutine.class));
         } else if (id == R.id.nav_class_notice) {

@@ -17,7 +17,7 @@ public class Results {
     private Integer totalCreditEarned;
     @SerializedName("cgpa")
     @Expose
-    private Double cgpa;
+    private String cgpa;
     @SerializedName("grade_letter")
     @Expose
     private String gradeLetter;
@@ -46,11 +46,14 @@ public class Results {
         this.totalCreditEarned = totalCreditEarned;
     }
 
-    public Double getCgpa() {
+    public String getCgpa() {
         return cgpa;
     }
 
     public void setCgpa(Double cgpa) {
+        this.cgpa = cgpa.toString();
+    }
+    public void setCgpa(String cgpa) {
         this.cgpa = cgpa;
     }
 

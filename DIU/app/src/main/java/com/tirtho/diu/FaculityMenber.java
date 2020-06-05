@@ -22,6 +22,7 @@ import javax.net.ssl.SSLSocketFactory;
 import javax.net.ssl.TrustManager;
 import javax.net.ssl.X509TrustManager;
 
+import okhttp3.Cache;
 import okhttp3.OkHttpClient;
 import retrofit2.Call;
 import retrofit2.Callback;
@@ -49,10 +50,17 @@ public class FaculityMenber extends AppCompatActivity {
         String selected= getIntent().getStringExtra("selected");
         this.setTitle(selected);
 
+        int cacheSize = 10 * 1024 * 1024; // 10 MB
+        Cache cache = new Cache(getCacheDir(), cacheSize);
+
+        OkHttpClient okHttpClient = new OkHttpClient.Builder()
+                .cache(cache)
+                .build();
+
 
         Retrofit retrofit = new Retrofit.Builder()
                 .baseUrl("https://admindiu.000webhostapp.com")
-                .client(getUnsafeOkHttpClient().build())
+                .client(okHttpClient)
                 .addConverterFactory(GsonConverterFactory.create())
                 .build();
 

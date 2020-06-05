@@ -69,6 +69,7 @@
         app:cardCornerRadius="5dp">
 
         <LinearLayout
+            android:id="@+id/llNotice"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
@@ -116,6 +117,7 @@
         app:cardCornerRadius="5dp">
 
         <LinearLayout
+            android:id="@+id/llEvent"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal">

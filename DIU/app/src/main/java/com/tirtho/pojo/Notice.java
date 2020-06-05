@@ -1,15 +1,24 @@
 package com.tirtho.pojo;
 
+import com.google.gson.annotations.Expose;
+import com.google.gson.annotations.SerializedName;
+
 import java.util.Date;
 
 public class Notice {
+    @SerializedName("title")
+    @Expose
     private String title;
-    private String text;
+    @SerializedName("image")
+    @Expose
+    private String image;
+    @SerializedName("date")
+    @Expose
     private String date;
 
     public Notice(String title, String text, String date) {
         this.title = title;
-        this.text = text;
+        this.image = text;
         this.date = date;
     }
 
@@ -22,11 +31,11 @@ public class Notice {
     }
 
     public String getText() {
-        return text;
+        return image;
     }
 
     public void setText(String text) {
-        this.text = text;
+        this.image = text;
     }
 
     public String getDate() {

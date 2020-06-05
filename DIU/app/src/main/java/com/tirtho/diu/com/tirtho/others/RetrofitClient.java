@@ -1,5 +1,8 @@
 package com.tirtho.diu.com.tirtho.others;
 
+import com.tirtho.com.tirtho.com.tirtho.login.LoginService;
+import com.tirtho.com.tirtho.registration.BatchServices;
+import com.tirtho.com.tirtho.registration.DepertmentService;
 import com.tirtho.com.tirtho.result.ResultService;
 import com.tirtho.com.tirtho.user.ProfileService;
 
@@ -40,8 +43,20 @@ public class RetrofitClient {
         return retrofit.create(ProfileService.class);
     }
 
+    public LoginService getLoginService(){
+        return retrofit.create(LoginService.class);
+    }
+
     public ResultService getResultService(){
         return  retrofit.create(ResultService.class);
+    }
+
+    public DepertmentService getDepertmentService(){
+        return  retrofit.create(DepertmentService.class);
+    }
+
+    public BatchServices getBatchServices(){
+        return  retrofit.create(BatchServices.class);
     }
 
 

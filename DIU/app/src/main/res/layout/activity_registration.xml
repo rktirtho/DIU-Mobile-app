@@ -21,33 +21,26 @@
             android:src="@drawable/uni_logo" />
 
         <!-- Email Label -->
-        <android.support.design.widget.TextInputLayout
+        <Spinner
+            android:id="@+id/sp_dept"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:layout_marginBottom="8dp">
 
-            <EditText
-                android:id="@+id/dept"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="Depertment"
-                android:inputType="textEmailAddress" />
-        </android.support.design.widget.TextInputLayout>
+            >
 
-        <android.support.design.widget.TextInputLayout
+        </Spinner>
+
+        <Spinner
+            android:id="@+id/sp_batch"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:layout_marginBottom="8dp">
+            android:layout_marginTop="@dimen/activity_horizontal_margin"
+            tools:listitem="Select One"
+            android:layout_height="wrap_content">
 
-            <EditText
-                android:id="@+id/batch"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="Batch"
-                android:inputType="textEmailAddress" />
-        </android.support.design.widget.TextInputLayout>
+        </Spinner>
+
+
+
 
         <android.support.design.widget.TextInputLayout
             android:layout_width="match_parent"
@@ -60,7 +53,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="Registration Number"
-                android:inputType="textEmailAddress" />
+                android:inputType="text" />
         </android.support.design.widget.TextInputLayout>
 
         <android.support.design.widget.TextInputLayout
@@ -74,7 +67,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="Class Roll"
-                android:inputType="textEmailAddress" />
+                android:inputType="number" />
         </android.support.design.widget.TextInputLayout>
 
         <!-- Password Label -->
@@ -89,7 +82,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="Registration Phone Number"
-                android:inputType="textPassword" />
+                android:inputType="phone" />
         </android.support.design.widget.TextInputLayout>
 
         <android.support.v7.widget.AppCompatButton
@@ -103,13 +96,7 @@
             android:text="Register"
             android:textColor="#fff" />
 
-        <TextView
-            android:id="@+id/link_forgotten"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:text="Forgotten Password?"
-            android:textSize="16dip" />
+
 
         <android.support.v7.widget.AppCompatButton
             android:id="@+id/btn_login"

@@ -103,7 +103,7 @@
                     android:textColor="#1e1e1e"
                     android:maxLines="2"
                     android:ellipsize="end"
-                    android:text="All Campus od dhaka international university will be close due to corona setution in bangladesh. Campus will be close from"/>
+                    android:text="All Campus of Dhaka International University will be close due to COVID-19 in bangladesh. Campus will be close from"/>
             </LinearLayout>
         </LinearLayout>
     </android.support.v7.widget.CardView>
@@ -140,7 +140,7 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Next Upcoming Event Title will gone there"
+                    android:text="Emerging Technologies and Online Education In Tertiary Level Amid COVID-19"
                     android:maxLines="1"
                     android:ellipsize="end"
                     android:textColor="#1e1e1e"
@@ -151,7 +151,7 @@
                     android:textColor="#1e1e1e"
                     android:maxLines="2"
                     android:ellipsize="end"
-                    android:text="International Confirence on Corona vorous"/>
+                    android:text="Emerging Technologies and Online Education in Tertiary Level amid COVID-19 is to be held on: Date: 07 June 2020,Time: 7:30 ~ 8:30 pm at Dhaka International University – DIU Official Facebook Page"/>
             </LinearLayout>
         </LinearLayout>
     </android.support.v7.widget.CardView>

@@ -1,5 +1,6 @@
 package com.tirtho.diu;
 
+import android.app.ProgressDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -33,6 +34,8 @@ import retrofit2.converter.gson.GsonConverterFactory;
 public class FaculityMenber extends AppCompatActivity {
 
     ListView listView;
+
+    ProgressDialog progressDoalog;
    AdministrationService administrationService;
 
    TextView test ;
@@ -44,6 +47,13 @@ public class FaculityMenber extends AppCompatActivity {
 
         listView = findViewById(R.id.faculity_list);
         test = findViewById(R.id.test);
+
+        progressDoalog = new ProgressDialog(FaculityMenber.this);
+        progressDoalog.setMax(100);
+        progressDoalog.setMessage("Fatching Data....");
+        progressDoalog.setTitle("Please Wait");
+        progressDoalog.setProgressStyle(ProgressDialog.STYLE_SPINNER);
+        progressDoalog.show();
 
 
 
@@ -97,7 +107,8 @@ public class FaculityMenber extends AppCompatActivity {
 
 
                 }
-                test.setText(response.body().get(0).getName());
+//                test.setText(response.body().get(0).getName());
+                progressDoalog.dismiss();
 
 
             }
@@ -106,6 +117,7 @@ public class FaculityMenber extends AppCompatActivity {
             public void onFailure(Call<List<Faculaty>> call, Throwable t) {
                 Log.e("Adapter error", t.getMessage());
                 test.setText(t.getMessage());
+                progressDoalog.dismiss();
 
             }
         });

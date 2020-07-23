@@ -13,7 +13,8 @@
         android:roundIcon="@drawable/round_logo"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".NoticeView"></activity>
+        <activity android:name="com.tirtho.StatusActivity"></activity>
+        <activity android:name=".NoticeView" />
         <activity android:name="com.tirtho.FlashScreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

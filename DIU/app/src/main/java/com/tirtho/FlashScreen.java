@@ -21,6 +21,12 @@ import com.tirtho.diu.MainActivity;
 import com.tirtho.diu.R;
 import com.tirtho.diu.com.tirtho.others.RetrofitClient;
 import com.tirtho.diu.com.tirtho.others.ServiceHelper;
+import com.tirtho.diu.services.NoticeService;
+import com.tirtho.diu.services.StatusService;
+import com.tirtho.pojo.Notice;
+import com.tirtho.pojo.Status;
+
+import java.util.List;
 
 import retrofit2.Call;
 import retrofit2.Callback;
@@ -31,6 +37,9 @@ import retrofit2.converter.gson.GsonConverterFactory;
 public class FlashScreen extends AppCompatActivity {
 
     SharedPreferences preferences;
+    String status = "";
+
+    StatusService statusService;
 
 
     @Override
@@ -43,11 +52,46 @@ public class FlashScreen extends AppCompatActivity {
         boolean isLogin = preferences.getBoolean(LoginActivity.isLogin, false);
 
 
+        Retrofit retrofit = new Retrofit.Builder()
+                .baseUrl("https://admindiu.000webhostapp.com")
+                .addConverterFactory(GsonConverterFactory.create())
+                .build();
+
+        statusService = retrofit.create(StatusService.class);
+
+        Call<Status> statusCall = statusService.getStatus();
+
+        statusCall.enqueue(new Callback<Status>() {
+            @Override
+            public void onResponse(Call<Status> call, Response<Status> response) {
+                if (response.isSuccessful() && response.code()<300){
+                    if (response.body().getStatus().equals("false")){
+                        startActivity(new Intent(FlashScreen.this, StatusActivity.class));
+                        FlashScreen.this.finish();
+
+                    }
+                }else {
+                    Toast.makeText(FlashScreen.this, "Something wrong" +response.code(), Toast.LENGTH_SHORT).show();
+                }
+            }
+
+            @Override
+            public void onFailure(Call<Status> call, Throwable t) {
+                Toast.makeText(FlashScreen.this, ""+t.getMessage(), Toast.LENGTH_SHORT).show();
+
+            }
+        });
+
 
         if (!isLogin) {
-            Intent intent = new Intent(this, LoginActivity.class);
-            startActivity(intent);
-            this.finish();
+
+//            if (status.equals("true")) {
+                Intent intent = new Intent(this, LoginActivity.class);
+                startActivity(intent);
+                this.finish();
+//            }else{
+//                Toast.makeText(this, "Contact With Developer. App has some problem :: "+status, Toast.LENGTH_SHORT).show();
+//            }
         }else {
             String email = ServiceHelper.getEmail(this);
             String password = ServiceHelper.getPassword(this);
@@ -66,6 +110,8 @@ public class FlashScreen extends AppCompatActivity {
                         .getLoginService()
                         .login(new UserLogin(email, password));
 
+
+
                 call.enqueue(new Callback<LoginResponse>() {
                     @Override
                     public void onResponse(Call<LoginResponse> call, Response<LoginResponse> response) {
@@ -82,8 +128,16 @@ public class FlashScreen extends AppCompatActivity {
                                 editor.putString(ServiceHelper.ST_PROFILE_IMAGE, loginResponse.getUser().getProfile_photo());
                                 editor.putString(ServiceHelper.ST_NAME, loginResponse.getUser().getName());
                                 editor.apply();
-                                startActivity(new Intent(FlashScreen.this, MainActivity.class));
-                                FlashScreen.this.finish();
+
+//                                if (status.equals("true")){
+                                    startActivity(new Intent(FlashScreen.this, MainActivity.class));
+                                    FlashScreen.this.finish();
+//                                }else {
+//                                    Toast.makeText(FlashScreen.this, "Contact With Developer. App has some problem :: "+status, Toast.LENGTH_SHORT).show();
+//                                }
+
+
+
 
                             }else {
 

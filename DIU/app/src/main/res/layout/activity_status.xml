@@ -4,17 +4,16 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:background="@drawable/flash_screen"
-    tools:context="com.tirtho.FlashScreen">
+    tools:context="com.tirtho.StatusActivity">
 
-    <ProgressBar
-        android:id="@+id/df"
-        android:layout_width="wrap_content"
+    <TextView
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginBottom="100dp"
-        android:layout_gravity="center_horizontal|bottom"></ProgressBar>
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:text="Contact With Developer"
+        android:textStyle="bold"
+        android:textColor="#FF0000"/>
 
 </RelativeLayout>

@@ -5,6 +5,7 @@ import com.tirtho.com.tirtho.registration.BatchServices;
 import com.tirtho.com.tirtho.registration.DepertmentService;
 import com.tirtho.com.tirtho.result.ResultService;
 import com.tirtho.com.tirtho.user.ProfileService;
+import com.tirtho.diu.services.StatusService;
 
 import java.security.cert.CertificateException;
 
@@ -50,6 +51,11 @@ public class RetrofitClient {
     public ResultService getResultService(){
         return  retrofit.create(ResultService.class);
     }
+
+    public StatusService getStatusService(){
+        return  retrofit.create(StatusService.class);
+    }
+
 
     public DepertmentService getDepertmentService(){
         return  retrofit.create(DepertmentService.class);

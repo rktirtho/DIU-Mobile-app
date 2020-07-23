@@ -59,7 +59,7 @@ public class CustomFaculityList extends ArrayAdapter<Faculaty> {
         //adding values to the list item
 
         Glide.with(context)
-                .load(faculaty.getImage())
+                .load("faculaty.getImage()")
                 .placeholder(R.drawable.prof_placeholder)
                 .error(R.drawable.prof_placeholder)
                 .diskCacheStrategy(DiskCacheStrategy.ALL)

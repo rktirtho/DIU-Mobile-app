@@ -86,7 +86,7 @@ public class DepartmentView extends AppCompatActivity {
                 );
 
 
-                bgImage.setBackgroundResource(R.drawable.bg_cse);
+                bgImage.setBackgroundResource(R.drawable.bg_bba);
 
                 break;
             case "Department of EETE":

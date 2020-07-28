@@ -12,12 +12,12 @@
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="match_parent">
 
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:orientation="vertical">
 
             <android.support.v7.widget.CardView
@@ -100,24 +100,53 @@
                     android:padding="@dimen/activity_horizontal_margin"
                     android:orientation="vertical">
 
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:gravity="center"
-                        android:text="Coding \u0026 All others"
-                        android:textColor="#1e1e1e"
-                        android:textSize="20sp" />
+
                     <Space
                         android:layout_width="match_parent"
                         android:layout_height="2dp"
                         android:background="#1e1e1e"/>
 
-                    <!--<ImageView-->
-                    <!--android:layout_width="100dp"-->
-                    <!--android:layout_height="120dp"-->
-                    <!--android:layout_gravity="center"-->
-                    <!--android:scaleType="fitXY"-->
-                    <!--android:src="@drawable/rabbi" />-->
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="Rejaul Karim (Tirtho)"
+                        android:textColor="#1e1e1e"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="E-62 Batch\nAssistant General Secretary (DIU CPC)"
+                        android:textColor="#1e1e1e" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="Department of Computer Science \u0026 Engineering"
+                        android:textColor="#1e1e1e" />
+                </LinearLayout>
+
+
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/activity_horizontal_margin"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                card_view:cardCornerRadius="10dp"
+                card_view:cardElevation="@dimen/activity_horizontal_margin"
+                card_view:cardPreventCornerOverlap="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/activity_horizontal_margin"
+                    android:orientation="vertical">
 
                     <TextView
                         android:layout_width="match_parent"
@@ -131,7 +160,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:gravity="center"
-                        android:text="Reg: CS-E-53-16-103142"
+                        android:text="E-53 Batch\n General Secretary "
                         android:textColor="#1e1e1e" />
 
                     <TextView
@@ -165,26 +194,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:gravity="center"
-                        android:text="Data flow \u0026 System Analysis"
-                        android:textColor="#1e1e1e"
-                        android:textSize="20sp" />
-                    <Space
-                        android:layout_width="match_parent"
-                        android:layout_height="2dp"
-                        android:background="#1e1e1e"/>
-
-                    <!--<ImageView-->
-                    <!--android:layout_width="100dp"-->
-                    <!--android:layout_height="120dp"-->
-                    <!--android:layout_gravity="center"-->
-                    <!--android:scaleType="fitXY"-->
-                    <!--android:src="@drawable/rabbi" />-->
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:gravity="center"
-                        android:text="Md. Taraquzzaman Sharif"
+                        android:text="Cooperated by"
                         android:textColor="#1e1e1e"
                         android:textSize="18sp" />
 
@@ -192,191 +202,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:gravity="center"
-                        android:text="CS-E-53-16-103146"
-                        android:textColor="#1e1e1e" />
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:gravity="center"
-                        android:text="Department of Computer Science \u0026 Engineering"
-                        android:textColor="#1e1e1e" />
-                </LinearLayout>
-
-
-            </android.support.v7.widget.CardView>
-            <android.support.v7.widget.CardView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginTop="@dimen/activity_horizontal_margin"
-                android:layout_marginRight="@dimen/activity_horizontal_margin"
-                android:layout_marginLeft="@dimen/activity_horizontal_margin"
-                card_view:cardCornerRadius="10dp"
-                card_view:cardElevation="@dimen/activity_horizontal_margin"
-                card_view:cardPreventCornerOverlap="true">
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:padding="@dimen/activity_horizontal_margin"
-                    android:orientation="vertical">
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:gravity="center"
-                        android:text="Content \u0026 Design"
-                        android:textColor="#1e1e1e"
-                        android:textSize="20sp" />
-                    <Space
-                        android:layout_width="match_parent"
-                        android:layout_height="2dp"
-                        android:background="#1e1e1e"/>
-
-                    <!--<ImageView-->
-                    <!--android:layout_width="100dp"-->
-                    <!--android:layout_height="120dp"-->
-                    <!--android:layout_gravity="center"-->
-                    <!--android:scaleType="fitXY"-->
-                    <!--android:src="@drawable/rabbi" />-->
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:gravity="center"
-                        android:text="Mahmudul Hasan Murad"
-                        android:textColor="#1e1e1e"
-                        android:textSize="18sp" />
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:gravity="center"
-                        android:text="CS-E-53-16-103108"
-                        android:textColor="#1e1e1e" />
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:gravity="center"
-                        android:text="Department of Computer Science \u0026 Engineering"
-                        android:textColor="#1e1e1e" />
-                </LinearLayout>
-
-
-            </android.support.v7.widget.CardView>
-            <android.support.v7.widget.CardView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginTop="@dimen/activity_horizontal_margin"
-                android:layout_marginRight="@dimen/activity_horizontal_margin"
-                android:layout_marginLeft="@dimen/activity_horizontal_margin"
-                card_view:cardCornerRadius="10dp"
-                card_view:cardElevation="@dimen/activity_horizontal_margin"
-                card_view:cardPreventCornerOverlap="true">
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:padding="@dimen/activity_horizontal_margin"
-                    android:orientation="vertical">
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:gravity="center"
-                        android:text="Documentation \u0026 Book Writing"
-                        android:textColor="#1e1e1e"
-                        android:textSize="20sp" />
-                    <Space
-                        android:layout_width="match_parent"
-                        android:layout_height="2dp"
-                        android:background="#1e1e1e"/>
-
-                    <!--<ImageView-->
-                    <!--android:layout_width="100dp"-->
-                    <!--android:layout_height="120dp"-->
-                    <!--android:layout_gravity="center"-->
-                    <!--android:scaleType="fitXY"-->
-                    <!--android:src="@drawable/rabbi" />-->
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:gravity="center"
-                        android:text="Md. Abir Ahmed Akash"
-                        android:textColor="#1e1e1e"
-                        android:textSize="18sp" />
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:gravity="center"
-                        android:text="CS-E-53-16-103029"
-                        android:textColor="#1e1e1e" />
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:gravity="center"
-                        android:text="Department of Computer Science \u0026 Engineering"
-                        android:textColor="#1e1e1e" />
-                </LinearLayout>
-
-
-            </android.support.v7.widget.CardView>
-
-            <android.support.v7.widget.CardView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginTop="@dimen/activity_horizontal_margin"
-                android:layout_marginRight="@dimen/activity_horizontal_margin"
-                android:layout_marginLeft="@dimen/activity_horizontal_margin"
-                card_view:cardCornerRadius="10dp"
-                card_view:cardElevation="@dimen/activity_horizontal_margin"
-                card_view:cardPreventCornerOverlap="true">
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:padding="@dimen/activity_horizontal_margin"
-                    android:orientation="vertical">
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:gravity="center"
-                        android:text="Testing \u0026 Presentation"
-                        android:textColor="#1e1e1e"
-                        android:textSize="20sp" />
-                    <Space
-                        android:layout_width="match_parent"
-                        android:layout_height="2dp"
-                        android:background="#1e1e1e"/>
-
-                    <!--<ImageView-->
-                    <!--android:layout_width="100dp"-->
-                    <!--android:layout_height="120dp"-->
-                    <!--android:layout_gravity="center"-->
-                    <!--android:scaleType="fitXY"-->
-                    <!--android:src="@drawable/rabbi" />-->
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:gravity="center"
-                        android:text="Md. Rabbi"
-                        android:textColor="#1e1e1e"
-                        android:textSize="18sp" />
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:gravity="center"
-                        android:text=" CS-E-53-16-103116"
+                        android:text="IT Team"
                         android:textColor="#1e1e1e" />
 
                     <TextView
